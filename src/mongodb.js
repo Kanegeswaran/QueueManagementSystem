@@ -17,6 +17,6 @@ const PhotoboothSchema = new mongoose.Schema({
     }
 });
 
-const photoboothCollection = new mongoose.model("Photobooth", PhotoboothSchema);
+const collection = new mongoose.model("Photobooth", PhotoboothSchema);
 
-module.exports = photoboothCollection;
+module.exports = collection;
