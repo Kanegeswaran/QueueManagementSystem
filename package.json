@@ -1,1 +1,20 @@
-{}
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  },
+  "name": "queuemanagementsystem",
+  "version": "1.0.0",
+  "description": "A website for online Queue Management System.",
+  "main": "index.js",
+  "type": "commonjs",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
