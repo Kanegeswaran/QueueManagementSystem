@@ -123,6 +123,10 @@
     color: #fff;
 }
 
+.booth-headline{
+    color: #a45c40;
+}
+
 /* Hide Image after reaching certain threshold */
 @media (max-width: 1100px){
     .image-column{

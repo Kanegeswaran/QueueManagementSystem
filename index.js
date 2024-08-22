@@ -1,9 +1,9 @@
-const express= require("express");
+const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const collection = require("mongodb");
 
-const templatePath = path.join(__dirname, "../templates");
+const templatePath = path.join(__dirname, "/templates");
 const app = express();
 const port = 3000;
 
@@ -11,18 +11,20 @@ app.use(express.json());
 app.set("view engine","hbs");
 app.set("views",templatePath);
 app.use(express.urlencoded({extended:true}));
+app.use(express.static('public'));
+app.use(express.static('assets'));
 
 app.get("/", (req, res) => {
   res.render("login");
 });
 
 app.post("/login",async(req,res)=>{
-    const data = {
-        name: req.body.name,
-        queueNumber: 20
-    };
+    // const data = {
+    //     name: req.body.name,
+    //     queueNumber: 20
+    // };
 
-    await collection.insertMany([data]);
+    // await collection.insertMany([data]);
     res.render("queue_view");
 });
 
