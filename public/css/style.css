@@ -179,18 +179,11 @@
     padding: 10px;
     cursor: pointer;
     font-size: 14px;
-    border-bottom: 1px solid #ddd;
 }
 
 /* Highlight the suggestion on hover */
 .suggestion-item:hover {
     background-color: #f5f5f5;
-}
-
-/* Optional: Style the input field to match the suggestions */
-#floatingInput {
-    position: relative;
-    z-index: 1001; /* Ensure input stays above the suggestions */
 }
 
 
